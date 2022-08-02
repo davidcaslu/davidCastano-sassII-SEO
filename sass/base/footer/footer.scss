@@ -1,0 +1,38 @@
+footer{
+    grid-area: footer;
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(to bottom, $color-footer, $color-footer-degradado);
+    width: 100%;
+    height: 100px;
+    // display:flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items:center;
+    @include flex(row, center, center);
+    color: white;
+}
+
+.footer {
+    &_contacto{
+        grid-area: footer;
+        font-family: 'Inter', sans-serif;
+        // background-color: $color-footer;
+        background-color: map-get($colores-pag, color-footer);
+        width: 100%;
+        height: 100px;
+        // display:flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items:center;
+        @include flex(row, center, center);
+        color: white;
+    }
+
+    &--inline{
+        display:inline;
+    }
+}
+
+.filtroInvertir{
+    filter: invert(1);
+}
